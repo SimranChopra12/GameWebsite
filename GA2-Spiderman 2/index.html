@@ -1,0 +1,425 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+    <head> 
+
+        <title>Games</title> 
+
+        <!-- 
+            Title of the webpage : Games 
+        --> 
+
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!--
+            linking CSS stylesheet
+        -->
+    </head> 
+
+    <body> 
+
+        <header id="pg-header"> 
+
+            <p id="header">The Mind Bloggling Games</p> 
+
+             <nav class="pg-main-nav"> 
+
+                <a href="#mini-game-sahil">Game-1</a> 
+
+                <a href="#mini-game-prianshu">Game-2</a> 
+
+                <a href="#mini-game-ilia">Game-3</a> 
+
+                <a href="#mini-game-hanwen">Game-4</a> 
+
+                <a href="#mini-game-simran">Game-5</a> 
+
+            </nav> 
+
+            <!-- 
+                Navigation bar with links to other parts of the page.  
+            --> 
+
+        </header> 
+
+ 
+ 
+
+        <section id="mini-game-sahil"> 
+            <!-- 
+                Mini Game 1 made by Sahil Chawla
+                ID : B00878330 
+                
+                Features : Display Alert to tell whether the answer is wrong or correct 
+                           Also change background as a hint.
+                            
+               Learning : Implementation of JavaScript and CSS to make a successful webpage
+                          Games don't need heavy graphics for them to be fun and challenging. Simple Games made using basic knowledge of HTML, CSS and JavaScript can also be fun.              
+            --> 
+
+                <h1>Select the smallest circle</h1> 
+
+                <div id="options"> 
+
+    
+                    <img id="A" onclick="wrongAnswer()" src="img/A.png" alt="Circle 1"> 
+
+                    <!-- 
+                    Images Made using : Microsoft Powerpoint 
+                    Date accessed : 29 Oct 2020  
+                    -->
+
+                    <img id="B" onclick="wrongAnswer()" src="img/B.png" alt="Circle 2"> 
+
+                    <!-- 
+                    Images Made using : Microsoft Powerpoint 
+                    Date accessed : 29 Oct 2020  
+                    -->
+
+                    <img id="C" onclick="wrongAnswer()" src="img/C.png" alt="Circle 3">  
+                    
+                    <!-- 
+                    Images Made using : Microsoft Powerpoint 
+                    Date accessed : 29 Oct 2020  
+                    -->
+
+                    <img id="D" onclick="wrongAnswer()" src="img/D.png" alt="Circle 4"> 
+
+                    <!-- 
+                    Images Made using : Microsoft Powerpoint 
+                    Date accessed : 29 Oct 2020  
+                    -->
+
+                    <img id="E" onclick="correctAnswer()" src="img/E.png" alt="Circle 5"> 
+
+                    <!-- 
+                    Images Made using : Microsoft Powerpoint 
+                    Date accessed : 29 Oct 2020  
+                    -->
+                    
+                </div>   
+
+                <div id="hint-1"> 
+
+                    <p><b>Hover Here For A Clue!</b></p> 
+
+                    <p id="hint-text-1"><b>Think Outside the Box</b></p> 
+
+                </div> 
+
+                <!-- 
+                    Div for first Hint. 
+                --> 
+
+                <div id="hint-2">                     
+
+                    <p><b>Still don't get it? Hover Here For Another Clue!</b></p> 
+
+                    <button id="hint-text-2" onclick="darkModeHint()"><strong>Somethings are found when the lights are turned off. Click here to turn on/off lights.</strong></button> 
+
+                </div> 
+   
+                <!-- 
+                    Div for second hint. 
+                    contains a button to change color of the section using javascript 
+                --> 
+
+        </section>  
+
+ 
+        <!-- New Section --> 
+
+        <section id="mini-game-prianshu"> 
+
+            <!--Heading with a select option--> 
+
+            <h1>Select <a id="anchorprianshu" href="" onclick="displayText()">Miles Morales</a></h1> 
+
+            <fieldset> 
+
+                <!-- 
+
+                    Buttons for next game, previous game and hint to the question 
+
+                --> 
+
+                <label>FOR HINT CLICK HERE:</label> 
+
+                <button onclick="hint()" id="hint-button">Hint</button> 
+
+                <label>Next Game:</label> 
+
+                <button class="Pbuttons" onclick="nextgame()">Game 3</button> 
+
+                <label>Previous Game:</label> 
+
+                <button class="Pbuttons" onclick="previousgame()">Game 1</button> 
+
+            </fieldset> 
+
+            <div id="main-images"> 
+
+                <!--Table with images as select options--> 
+
+                <table> 
+
+                    <tr> 
+
+                        <td><img onclick="displayIncorrect()" id="img1" src="img/milesspider.jpg" alt="Miles Spiderman Suit"></td> 
+
+                        <td></td> 
+
+                        <!--Correct option to the question--> 
+
+                        <td><img onclick="displayCorrect()" id="img2" src="img/miles.jpg" alt="Miles as a teenager"></td> 
+
+                    </tr> 
+
+                    <tr> 
+
+                        <td></td> 
+
+                        <td><img onclick="displayIncorrect()" id="img3" src="img/peter.png" alt="Peter Parker"></td> 
+
+                        <td></td> 
+
+                    </tr> 
+
+                    <tr> 
+
+                        <td><img onclick="displayIncorrect()" id="img4" src="img/milesspiderverse.jpg" alt="Miles Spiderman in SpiderVerse"></td> 
+
+                        <td></td> 
+
+                        <td><img onclick="displayIncorrect()" id="img5" src="img/spidermanfar.jpg" alt="Spiderman far from home"></td> 
+
+                    </tr> 
+
+                </table> 
+
+            </div> 
+
+        </section> 
+
+        <!-- New Section --> 
+
+        <section id="mini-game-ilia">   
+
+            <!--This is going to be the main question--> 
+
+            <section id="ilia_pg_header">  
+
+                <p > 
+
+                    <h1 onclick="ilia_left()">Which one is the right sequence?</h1> 
+
+                </p> 
+            
+            </section>
+
+                <!--These are the options--> 
+
+            <section id="ilia_pg_body"> 
+
+                <section onclick="ilia_Wrong()"> 
+
+                        <p id="ilia_p1">1+2+3+4+...</p> 
+
+                </section> 
+
+                <section onclick="ilia_Right()"> 
+
+                        <p id="ilia_p2">3-5+7-3+8+...</p> 
+
+                </section> 
+
+                <section onclick="ilia_Wrong()"> 
+
+                        <p id="ilia_p3">0+0+0+0+...</p> 
+
+                        <p id="ilia_p4">0</p> 
+
+                </section> 
+
+                 
+            <!--These are the previous and next links--> 
+
+                <section id="ilia_pg_footer"> 
+
+                    <a id="ilia_li1" href="#mini-game-prianshu">PREVIOUS</a> 
+
+                    <a id="ilia_li2" href="#mini-game-hanwen">NEXT</a> 
+
+                </section> 
+
+            </section> 
+       
+        </section> 
+
+       
+    <!-- New Section --> 
+
+        <section id="mini-game-hanwen"> 
+
+            <section id="shi-pg-title"> 
+
+                <h1>Quiz Question</h1> 
+
+            </section> 
+
+            <h2 id="shi-question">Which of the following events happened in 1996?</h2> 
+
+            <section id="shi-answers"> 
+
+                <P>A. The first ever YouTube video is uploaded, titled Me at the zoo.</P> 
+
+            <!-- 
+
+                question take from: wikipedia 
+
+                URL: https://en.wikipedia.org/wiki/2005 
+
+                Date accessed: 27th October 2020 
+
+            --> 
+
+                <p>B. NASA launches the Mars Global Surveyor.</p> 
+
+            <!-- 
+
+                question take from: wikipedia 
+
+                URL: https://en.wikipedia.org/wiki/1996 
+
+                Date accessed: 27th October 2020 
+
+            -->  
+
+                <p>C. The first 24-hour flight by a solar-powered plane is completed by the Solar Impulse.</p> 
+
+            <!-- 
+
+                question take from: wikipedia 
+
+                URL: https://en.wikipedia.org/wiki/2010 
+
+                Date accessed: 27th October 2020 
+
+            --> 
+
+                    <p>D. Canada's Avro Arrow makes its maiden flight.</p> 
+
+            <!-- 
+
+                question take from: wikipedia 
+
+                URL: https://en.wikipedia.org/wiki/1958 
+
+                Date accessed: 27th October 2020 
+
+            --> 
+
+            </section> 
+
+            <div id="shi-submit-Answer"> 
+
+                <form action="" method="get"> 
+
+                    <input type="text" id="users-answer" name="uanswer"  
+
+                    placeholder="Enter your answer..."> 
+
+                    <button type="button" onclick="shiDisplayAnswer('A')" >Submit answer</button> 
+
+                </form> 
+
+            </div> 
+
+        </section> 
+
+ 
+        <!-- New Section --> 
+
+       <section id="mini-game-simran"> 
+
+                <p class="simran">Choose the correct answer by clicking on the buttons. Answer this simple but tricky math question!</p> 
+
+                <p class="simran">  1+1+1+1+1+1+1x0+1=???</p> 
+
+                <!-- 
+
+                    question take from:puzzlersworld.com 
+
+                    URL:https://puzzlersworld.com/number-puzzles/1-1-1-1-1-90-fail/ 
+
+                    Date accessed: 27th October 2020 
+
+                --> 
+                
+                <div id="choice-options-1">
+
+                    <button type="button" class="button-simran"  onclick="correct()" id="button1-simran"> 1 </button> 
+
+
+                    <button type="button" class="button-simran"  onclick="wrong()" id="button2-simran">0</button> 
+
+                </div>
+
+                <div id="choice-options-2">
+
+                    <button type="button" class="button-simran"  onclick="wrong()" id="button3-simran">7</button> 
+
+
+                    <button type="button" class="button-simran"  onclick="wrong()" id="button4-simran">ALL OPTIONS ARE INCORRECT !</button> 
+
+                    <!--  
+
+                        Information about <button> tag taken from w3schools.com 
+
+                            URL:https://www.w3schools.com/tags/tag_button.asp 
+
+                            Date accessed: 27th October 2020 
+
+                    --> 
+
+                    <!--  
+
+                        The buttons are like multiple choice questions-answers. The user will click on one of these answers 
+
+                    --> 
+                </div>
+
+
+                <div class="hint-simran"> HOVER YOUR MOUSE OVER THIS TEXT FOR A HINT !</div> 
+
+                <div class = "hide-simran">  Don't forget to use BODMAS !</div> 
+
+                <!-- 
+
+                    Concept of how to display text by using css learned from w3schools.com 
+
+                    URL: https://www.w3schools.com/howto/howto_css_display_element_hover.asp 
+
+                    Date accessed: 27th October 2020 
+
+                --> 
+
+                <!-- I have used hover property for giving the user a hint. A hint will be displayed once the user hovers their mouse over the text--> 
+
+                <footer class="footer-simran"> 
+
+                    Website made by SPIDERMAN-2   <BR>
+                    TEAM MEMBERS: HANWEN, ILIA, PRIANSHU, SIMRAN,  SAHIL 
+
+                </footer> 
+
+        </section> 
+        <script src="js/scripts.js"></script>
+    </body> 
+    <!--
+        From this group activity, I got to learn about many new concepts like javascript, flexbox etc.
+        I also learned a lot from my members as we gave each other a lot of suggestions and helped each other to improve
+        I learned about these feautures and how to implement them.
+    -->
+</html> 
